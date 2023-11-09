@@ -1,5 +1,11 @@
 # Capacitação Tomorrow - Instituto de Computação - UFBA
 <h3>Projeto final - Loja vitual de tênis.</h3>
+<h5>EQUIPE:</h5>
+- Clara Rodrigues
+- Jussara Teixeira
+- Lavinia Calazans
+- Luís André
+- Maria Natiele
 
 ##
 
