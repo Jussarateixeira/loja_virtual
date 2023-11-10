@@ -1,8 +1,11 @@
+//Pegando elementos do HTML
+const produtos = document.querySelectorAll('.produtos');
+const totalElement = document.getElementById('total');
+const carrinho = document.querySelector('#carrinho ul'); 
+let total = 0;
+
+//logica do carrinho de compras
 document.addEventListener('DOMContentLoaded', function() {
-    const produtos = document.querySelectorAll('.produtos');
-    const totalElement = document.getElementById('total');
-    const carrinho = document.querySelector('#carrinho ul');
-    let total = 0;
     produtos.forEach(produto => {
         const adicionarBtn = produto.querySelector('.btn-comprar');
         adicionarBtn.addEventListener('click', function() {
@@ -10,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const preco = parseFloat(precoTexto.replace('Preço: R$ ', ''));
 
             const nome = produto.querySelector('.img-produtos').alt;
-
+            //adicionando itens ao carrinho 
             const itemCarrinho = document.createElement('li');
             itemCarrinho.textContent = `${nome} - R$ ${preco.toFixed(2)}`;
             carrinho.appendChild(itemCarrinho);
@@ -24,3 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//função para confirmar compras
+function confirmarCompra(){
+    window.alert(`Compra no valor de R$${total} efetuada com sucesso!`);
+    location.reload();
+}
