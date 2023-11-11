@@ -11,6 +11,7 @@
 - Claudio Junior N. da Silva
 
 ##
+<h5>INFORMAÇÕES SOBRE O PROJETO:</h5>
 
 - MOTIVAÇÃO PARA ESCOLHA DO TEMA: O aumento de compras realizadas pela internet fez com que muitos sites fossem desenvolvidos para compra de diversos produtos.
 - DEMONSTRAÇÃO DA EXECUÇÃO DA APLICAÇÃO: Os recursos em HTML, CSS e JAVASCRIPT estão disponíveis no presente repositório.
