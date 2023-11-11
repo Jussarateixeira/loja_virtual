@@ -10,10 +10,15 @@
 <body>
     <header>
             <div class="menu"> 
-                <h1>JordanShoes</h1>
+                <h1>Loja JordanShoes</h1>  
             </div>
             <div class="carrinho">
-                <img src="imagens/carrinho-de-compras.png" alt="imagem do carrinho" id="car">
+                <a href="#Carrinho"> 
+                    <img src="imagens/carrinho-de-compras.png" alt="imagem do carrinho" id="car">
+                </a>
+                
+             
+             
             </div>
     </header>
     <nav>
@@ -50,14 +55,27 @@
                 <p class="preco">Preço: R$ 350.00 </p>
                 <button class="btn-comprar adicionar">Comprar</button> 
             </div>
-            <div id="carrinho" class="escondido">
-                <h2>Carrinho</h2>
-                <p id="total">Total: R$ 0.00</p>
-                <ul></ul>
-            </div> 
+
+            <!-- Carrinho -->
+                <div class="compras">
+                    <h1 id="Carrinho">Carrinho de Compras</h1>
+                    <div id="carrinho" class="escondido" >
+                   
+                        <p id="total">Total: R$ 0.00</p>
+                        <ul></ul>
+    
+                        
+                    </div> 
+                    <button id="confirmar" onclick="confirmarCompra()">Confirmar Compra!</button> 
+
+                </div>
+
+               
+                   
+            <!-- Javacript -->
+                <script src="main.js"></script>
     </main>
-    <button id="confirmar" onclick="confirmarCompra()">Confirmar Compra!</button>
-    <script src="main.js"></script>
+    
     <footer>
         <p>&copy; Todos os direitos reservados - 2023</p>
     </footer>
